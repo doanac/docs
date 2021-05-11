@@ -33,11 +33,7 @@ Replace `YOUR_TOKEN` in the following command with your access token. An
 example token looks like this:
 `ebAYLaManEgNdRnWKfnwNDJjU45c5LJPmWsYw78z`
 
-bash host:~$, auto
-
-host:~$ git config --global
-http.<https://source.foundries.io.extraheader> "Authorization: basic
-$(echo -n YOUR\_TOKEN | openssl base64)"
+    host:~$ git config --global http.https://source.foundries.io.extraheader "Authorization: basic $(echo -n YOUR_TOKEN | openssl base64)"
 
 You can verify that this has been successful by attempting to clone a
 repository from your FoundriesFactory. As an example, you can clone your
@@ -45,16 +41,10 @@ repository from your FoundriesFactory. As an example, you can clone your
 
 Replace `<factory>` with your FoundriesFactory name.
 
-bash host:~$, auto
+    host:~$ git clone https://source.foundries.io/factories/<factory>/containers.git
 
-host:~$ git clone
-<https://source.foundries.io/factories/>&lt;factory&gt;/containers.git
+!!! Tip
 
-Tip
-
-You can also use `git config --list` to show you the current state of
-the global Git configuration, in which `source.foundries.io` should be
-referenced along with your access token, represented as a base64 string.
-
-**git-config** add :ref: to 'FoundriesFactory', 'access token', 'account
-creation', 'ci scripts' when pages are available
+    You can also use `git config --list` to show you the current state of
+    the global Git configuration, in which `source.foundries.io` should be
+    referenced along with your access token, represented as a base64 string.
