@@ -26,10 +26,10 @@ the reference server. Each device will be created via api.foundries.io
 This scenario is handy for certain security constrained setups. However,
 it does have a couple of potential drawbacks:
 
-> -   Devices don't show up on Foundries.io until the first time they
->     connect.
-> -   Devices won't have Foundries.io managed configuration data
->     available until this first connection.
+- Devices don't show up on Foundries.io until the first time they
+  connect.
+- Devices won't have Foundries.io managed configuration data
+  available until this first connection.
 
 ### lmp-device-auto-register configuration
 

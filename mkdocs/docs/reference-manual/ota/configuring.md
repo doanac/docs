@@ -4,10 +4,10 @@ Device configuration can be managed with the [fioctl command line
 tool](https://github.com/foundriesio/fioctl/releases). There are two
 types of configuration supported:
 
-> 1.  Fleet-wide - Configuration set here gets sent to all devices in a
->     Factory.
-> 2.  Device specific - This overrides fleet-wide configuration in the
->     event they collide.
+1.  Fleet-wide - Configuration set here gets sent to all devices in a
+    Factory.
+2.  Device specific - This overrides fleet-wide configuration in the
+    event they collide.
 
 ## Fleet Wide Configuration
 
